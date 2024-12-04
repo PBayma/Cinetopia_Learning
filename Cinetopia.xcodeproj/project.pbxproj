@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		251C362B2CFE519300093FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C362A2CFE519300093FE5 /* AppDelegate.swift */; };
 		251C362D2CFE519300093FE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C362C2CFE519300093FE5 /* SceneDelegate.swift */; };
-		251C362F2CFE519300093FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C362E2CFE519300093FE5 /* ViewController.swift */; };
-		251C36322CFE519300093FE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251C36312CFE519300093FE5 /* Base */; };
+		251C362F2CFE519300093FE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C362E2CFE519300093FE5 /* HomeViewController.swift */; };
 		251C36342CFE519400093FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251C36332CFE519400093FE5 /* Assets.xcassets */; };
 		251C36372CFE519500093FE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 251C36362CFE519500093FE5 /* Base */; };
+		251C363F2CFF9D9400093FE5 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C363E2CFF9D9300093FE5 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251C36272CFE519300093FE5 /* Cinetopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinetopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		251C362A2CFE519300093FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		251C362C2CFE519300093FE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		251C362E2CFE519300093FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		251C36312CFE519300093FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		251C362E2CFE519300093FE5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		251C36332CFE519400093FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251C36362CFE519500093FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		251C36382CFE519500093FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251C363E2CFF9D9300093FE5 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				251C362A2CFE519300093FE5 /* AppDelegate.swift */,
 				251C362C2CFE519300093FE5 /* SceneDelegate.swift */,
-				251C362E2CFE519300093FE5 /* ViewController.swift */,
-				251C36302CFE519300093FE5 /* Main.storyboard */,
+				251C362E2CFE519300093FE5 /* HomeViewController.swift */,
+				251C363E2CFF9D9300093FE5 /* MoviesViewController.swift */,
 				251C36332CFE519400093FE5 /* Assets.xcassets */,
 				251C36352CFE519500093FE5 /* LaunchScreen.storyboard */,
 				251C36382CFE519500093FE5 /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				251C36342CFE519400093FE5 /* Assets.xcassets in Resources */,
 				251C36372CFE519500093FE5 /* Base in Resources */,
-				251C36322CFE519300093FE5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +137,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251C362F2CFE519300093FE5 /* ViewController.swift in Sources */,
+				251C362F2CFE519300093FE5 /* HomeViewController.swift in Sources */,
 				251C362B2CFE519300093FE5 /* AppDelegate.swift in Sources */,
 				251C362D2CFE519300093FE5 /* SceneDelegate.swift in Sources */,
+				251C363F2CFF9D9400093FE5 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		251C36302CFE519300093FE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				251C36312CFE519300093FE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		251C36352CFE519500093FE5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +288,6 @@
 				INFOPLIST_FILE = Cinetopia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +314,6 @@
 				INFOPLIST_FILE = Cinetopia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
